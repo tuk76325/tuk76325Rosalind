@@ -1,0 +1,8 @@
+# The following code is used to read every even numbered lined of a text file downloaded from rosalind.info
+count = 0
+file = open(r'C:\Users\Toshan\PycharmProjects\HelloRosa/rosalind_ini5.txt')
+output = open('outputrosa.txt', 'w')
+for line in file:
+    count += 1
+    if count % 2 == 0: 
+        output.write(line)
